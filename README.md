@@ -6,7 +6,7 @@ Biolens is a web-based platform designed to provide interactive 3D medical repor
 ## Team Members
 - Shaunak Barve(https://github.com/teamlead-Shaunak10)
 - Rohan Usgaonkar(https://github.com/member1-rohan2004672)
-- Sohail Torgal(https://github.com/member2-)
+- Sohail Torgal(https://github.com/member2-Sohailtorgal02)
 - Varun Raikar(https://github.com/member3-VarunR-23)
 - Shreya Naik(https://github.com/member4-ShreyaNaik07)
 
