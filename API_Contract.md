@@ -14,7 +14,7 @@ This document is the **single source of truth** for all API communication betwee
   "password": "securePass123",
   "role": "patient"
 }
-**Success Response (201 Created):**
+Success Response (201 Created):
 {
   "message": "User registered successfully",
   "user": {
@@ -24,7 +24,8 @@ This document is the **single source of truth** for all API communication betwee
     "role": "patient"
   }
 }
-**Error Responses:**
+
+Error Responses:
 **400 Bad Request**
 { "error": "Name, email, and password are required." }
 **409 Conflict**
