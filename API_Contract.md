@@ -15,6 +15,7 @@ This document is the **single source of truth** for all API communication betwee
   "password": "securePass123",
   "role": "patient"
 }
+'''
 Success Response (201 Created):
 {
   "message": "User registered successfully",
