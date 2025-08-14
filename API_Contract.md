@@ -8,7 +8,7 @@ This document is the **single source of truth** for all API communication betwee
 **Endpoint Path:** /api/users/register
 **Description:** Registers a new user (patient, student, or educator).
 **Request Body
-''' Json
+'''json
 {
   "name": "John Cena",
   "email": "john@example.com",
