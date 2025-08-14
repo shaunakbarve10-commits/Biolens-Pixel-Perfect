@@ -8,14 +8,14 @@ This document is the **single source of truth** for all API communication betwee
 **Endpoint Path:** /api/users/register
 **Description:** Registers a new user (patient, student, or educator).
 **Request Body
-'''json
+```json
 {
   "name": "John Cena",
   "email": "john@example.com",
   "password": "securePass123",
   "role": "patient"
 }
-'''
+```
 Success Response (201 Created):
 {
   "message": "User registered successfully",
