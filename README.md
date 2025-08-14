@@ -37,3 +37,35 @@ Biolens is a web-based platform designed to provide interactive 3D medical repor
    large 3D model files or scanned medical
    reports.
 
+
+# BIO LENS – Backend API (Assignment 4)
+
+Interactive 3D Healthcare + Education backend implemented with Node.js + Express, using in-memory storage and Swagger UI docs.
+
+## How to run
+
+1) Install Node.js (LTS).
+2) Open terminal in the `backend` folder.
+3) Install deps:
+   npm install
+4) Start dev server:
+   npm run dev
+
+Server: http://localhost:3000  
+Swagger Docs: http://localhost:3000/api-docs
+
+## Endpoints (from API contract)
+
+- POST /api/users/register
+- POST /api/users/login
+- POST /api/reports/upload  (multipart/form-data) [Auth: Bearer token]
+- GET  /api/reports/{report_id}
+- GET  /api/models
+- GET  /api/models/{model_id}
+- POST /api/progress        [Auth: Bearer token]
+
+## Notes
+- Data is stored in memory (arrays) for this assignment; it resets when the server restarts.
+- Uploads are saved under `backend/uploads/` (ignored by Git).
+- Use Swagger UI to test all endpoints.
+
