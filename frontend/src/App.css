@@ -1,0 +1,83 @@
+/* Full-page background with animation */
+.app-background {
+  min-height: 100vh;
+  background: linear-gradient(135deg, #1a1a1a, #0d0f12);
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  padding-top: 40px;
+  position: relative;
+  overflow: hidden;
+}
+
+/* Floating colored shapes */
+.app-background::before,
+.app-background::after {
+  content: '';
+  position: absolute;
+  border-radius: 50%;
+  filter: blur(80px);
+  opacity: 0.5;
+  animation: float 8s ease-in-out infinite alternate;
+}
+
+.app-background::before {
+  width: 400px;
+  height: 400px;
+  background: radial-gradient(circle, #ff5f5f, transparent 70%);
+  top: -150px;
+  left: -100px;
+}
+
+.app-background::after {
+  width: 400px;
+  height: 400px;
+  background: radial-gradient(circle, #35c7b4, transparent 70%);
+  bottom: -150px;
+  right: -100px;
+}
+
+/* Animated streaks */
+.streak {
+  position: absolute;
+  width: 200%;
+  height: 200%;
+  background: linear-gradient(
+    -45deg,
+    rgba(255, 95, 95, 0.2),
+    rgba(53, 199, 180, 0.2),
+    rgba(12, 219, 223, 0.2),
+    rgba(255, 255, 255, 0.05)
+  );
+  background-size: 400% 400%;
+  animation: gradientMove 15s ease infinite;
+  top: 0;
+  left: 0;
+  z-index: 0;
+}
+
+/* Glass container */
+.glass-container {
+  position: relative;
+  width: 80%;
+  border-radius: 20px;
+  background: rgba(255, 255, 255, 0.1);
+  backdrop-filter: blur(15px);
+  -webkit-backdrop-filter: blur(15px);
+  border: 1px solid rgba(255, 255, 255, 0.2);
+  padding: 1rem;
+  box-shadow: 0 0 40px rgba(255, 95, 95, 0.2), 0 0 40px rgba(53, 199, 180, 0.2);
+  z-index: 1; /* above background streaks */
+}
+
+/* Animations */
+@keyframes float {
+  from { transform: translateY(0); }
+  to { transform: translateY(30px); }
+}
+
+@keyframes gradientMove {
+  0% { background-position: 0% 50%; }
+  50% { background-position: 100% 50%; }
+  100% { background-position: 0% 50%; }
+}
